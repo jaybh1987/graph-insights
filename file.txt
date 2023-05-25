@@ -1,0 +1,14 @@
+
+
+Break existing tcp connections to s3 buckets require reconnecting to interact with s3.
+
+Currently pods, lamddas and other service pull data from S3 by using S3 endpoints via NAT gateways. 
+
+Implement VPC endpoint for an S3 gateway. This new endpoint will route traffic desined for s3 buckets through private IPs directly to aws's s3 service 
+instead of sending traffic out our NAT gateways. 
+
+
+
+S3 vpc endpoint 
+
+    
