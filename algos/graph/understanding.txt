@@ -1,0 +1,38 @@
+reference link: https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/
+                https://www.tutorialspoint.com/Graph-Data-Structure-in-Javascript
+
+
+Graph is a data structure where a node can have zero or more adjacent elements.
+
+Connection between two nodes is called edge.
+Nodes can also called vertices.
+degree is the number of adges connected to a vertex.
+
+if the edges are bi-directional, then we have undirected graph.
+if the edges have the direction, then we have directed graph or di-graph for short.
+
+vertex can have edges that go to itself. this is called self loop.
+
+
+Cyclic Graph:
+  A graph can have cycles. Which means you could get the same node more than once.
+
+Acyclic Graph:
+  The graph without cycles is called acyclic graph.
+  Acyclic undirected graphs are called tree.
+
+Not all vertices have to be connected in the graph.
+You might have isolated nodes or even seperated subgraphs.
+
+All nodes have atleast 1 edge. then we have connected graph.
+When all nodes are connected to all other nodes, then we have a complete graph.
+
+
+There is 2 primary ways of representing graph.
+  Adjacency list
+  Adjacency Matrix.
+
+
+
+Adjacency matrix:
+  This is a way of representing graph using two-dimensional array (N * N matrix)
