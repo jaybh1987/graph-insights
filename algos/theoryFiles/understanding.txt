@@ -32,7 +32,23 @@ There is 2 primary ways of representing graph.
   Adjacency list
   Adjacency Matrix.
 
-
-
 Adjacency matrix:
   This is a way of representing graph using two-dimensional array (N * N matrix)
+
+
+If there are few connections we call it a sparse graph.
+if there are many collections we call it dense graph.
+
+
+adjacency list :
+  one of the most comman ways to represent graphs.
+  each node has a list of all nodes connected to it.
+
+  array or hashmap can be used.
+
+  a -> {a , b}
+  b -> {c}
+  c -> {d}
+  d -> {b c}
+
+  go through the list to know which nodes are connected.

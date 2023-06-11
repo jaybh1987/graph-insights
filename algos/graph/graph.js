@@ -76,7 +76,7 @@ class Graph {
 
   removeVertex(value) {
     const current = this.nodes.get(value)
-
+    console.log('current = '+ current)
     if(current) {
       for(const node of this.nodes.values()) {
         node.removeAdjacent(current)
@@ -87,19 +87,17 @@ class Graph {
   }
 
   removeEdge(source, destination) {
+
     const sourceNode = this.nodes.get(source)
     const destinationNode = this.nodes.get(destination)
 
     if(sourceNode && destinationNode) {
-      sourceNode.removeAdjacent(destinationNode)
+      sourceNode.removeAdjacent(destination)
 
-      if(this.edgeDirection === Graph.UNDIRECTED) {
-        destinationNode.removeAdjacent(sourceNode)
+      if(this.edgeDirection == Graph.UNDIRECTED) {
+        destinationNode.removeAdjacent(source)
       }
     }
-
-
-    return [sourceNode, destinationNode]
   }
 
 
@@ -108,3 +106,19 @@ class Graph {
 
 Graph.UNDIRECTED = Symbol('undirected graph')
 Graph.DIRECTED = Symbol('directed graph')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
