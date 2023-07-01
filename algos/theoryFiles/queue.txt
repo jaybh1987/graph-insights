@@ -1,0 +1,43 @@
+link: https://www.geeksforgeeks.org/implementation-queue-javascript/
+
+Queue datastructure
+
+2 basic operations
+1. addition of elements at the end of the queue
+2. removal of elements from the front of the queue.
+
+
+requierd methods in queue
+
+1. enqueue : To add element at end of the queue
+2. dequeue : To remove an element from the front of the queue
+2. peek: to get the front element without removing it.
+3. isEmpty: To check whether an element is present in the queue or not.
+4. printQueue: To print the elements present in queue.
+
+
+
+/
+  
+  
+  Hello, Good Morning.
+  I hope you are doing well. 
+  I applied for the test yesterday and want to share my thoughts. 
+  
+  
+  Thoughts: 
+  Many times companies following some specific procedures to hire the employees. 
+  Each domain in IT is very vast and also not possible to fit everything in our head.
+  Therefore, my test was not so good. 
+  Following is my suggestion please never mind. 
+  
+  Suggestion: 
+  Asking some questions and judging employees on that basis is not a good idea.
+  I would recommand companies should give some task to the candidates with a timeline to complete it. 
+  This task should include the techonology and procedures which company is following. 
+  Company should analyse the approach of candidate towards solving the problem. 
+  
+  In addition, company should consider the curiosity of candidate to learn and adopt new things. 
+  
+  
+ /

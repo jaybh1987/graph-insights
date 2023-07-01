@@ -111,14 +111,59 @@ Graph.DIRECTED = Symbol('directed graph')
 
 
 
+class Queue {
+    constructor(){
+        this.items = {}
+        this.frontIndex = 0
+        this.backIndex = 0
+    }
+
+    enqueue(item) {
+        this.items[this.backIndex] = item
+        this.backIndex++
+        return item + ' inserted'
+    }
+
+    dequeue() {
+        const item = this.items[this.frontIndex]
+        delete this.items[this.frontIndex]
+        this.frontIndex++
+        return item
+    }
+
+    peek(){
+        return this.items[this.frontIndex]
+    }
+
+    get printQueue() {
+        return this.items
+    }
+
+    isEmpty() {
+        return Object.keys(this.items).length == 0
+    }
+}
 
 
 
+function* bfs(first) {
 
+    const visited = new Map()
+    const visitList = new Queue()
 
+    visitList.enqueue(first)
 
+    while(!visitList.isEmpty) {
+        const node = visitList.dequeue()
 
+        if(node && !visited.has(node)) {
+            yield node;
+            visited.set(node)
+            node.getAdjacents().forEach( adj => visitList.enqueue(adj))
+        }
+    }
 
+}
 
 
 
